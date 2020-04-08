@@ -19,7 +19,7 @@ namespace ApartmanKayit
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if(TxtKullaniciAdi.Text == "admin" && TxtSifre.Text == "galata324")
+            if(TxtKullaniciAdi.Text == "admin" && TxtSifre.Text == "admin")
             {
                 frmAnaSayfa anaSayfa = new frmAnaSayfa();
                 anaSayfa.Show();
@@ -27,7 +27,7 @@ namespace ApartmanKayit
             }
             else
             {                
-                MessageBox.Show("Yasin Aga kullanıcı adın veya şifren yanlış!", "Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Kullanıcı adın veya şifren yanlış!", "Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 TxtKullaniciAdi.Text = "";
                 TxtSifre.Text = "";
             }
